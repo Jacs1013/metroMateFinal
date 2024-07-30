@@ -9,13 +9,40 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            VStack{
+                Text("Root view")
+            }
+            .toolbar{
+                ToolbarItemGroup(placement: .status){
+                    NavigationLink(destination: mapList())
+                    {
+                        Image("mapIcon")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    NavigationLink(destination: locationList())
+                    {
+                        Image("buildingIcon")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    NavigationLink(destination: favoriteList())
+                    {
+                        Image("heartIcon")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    NavigationLink(destination: ContentView())
+                    {
+                        Image("homeIcon")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                }
+            }
+            
         }
-        .padding()
     }
 }
 
