@@ -16,12 +16,16 @@ struct ContentView: View {
                     .fontWeight(.semibold)
                     .foregroundColor(Color(red: 0.0, green: 0.16, blue: 0.37, opacity: 1.0))
                     .padding(.trailing, 100.0)
-                    .padding(.top, -50)
+                    .padding(.top, 20)
+                    .padding(.bottom, -25)
                     
                 Image("subwayMap")
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fit)
-                    .padding([.leading, .bottom, .trailing], 50)
+                    .cornerRadius(10)
+                    .padding([.top, .leading, .trailing], 50)
+                    .padding(.bottom, 20)
+                    
                 Text("Click the icons below to find individual subway lines, top attractions to visit, and favorite your frequent trips!")
                     .font(.system(size:20))
                     .lineSpacing(8)
