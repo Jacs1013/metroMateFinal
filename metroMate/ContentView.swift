@@ -41,6 +41,7 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
                     }
+                    .navigationBarBackButtonHidden(true)
                     Spacer()
                     NavigationLink(destination: mapList()) {
                         Image("mapIcon")
@@ -48,6 +49,7 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
                     }
+                    .navigationBarBackButtonHidden(true)
                     Spacer()
                     NavigationLink(destination: locationList()) {
                         Image("buildingIcon")
@@ -55,6 +57,7 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
                     }
+                    .navigationBarBackButtonHidden(true)
                     Spacer()
                     NavigationLink(destination: favoriteList()) {
                         Image("heartIcon")
@@ -62,6 +65,7 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
                     }
+                    .navigationBarBackButtonHidden(true)
                 }
             }
         }
