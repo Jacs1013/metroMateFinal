@@ -38,21 +38,21 @@ struct ContentView: View {
                             .frame(width: 30, height: 30)
                     }
                     Spacer()
-                    NavigationLink(destination: MapScreenView()) {
+                    NavigationLink(destination: mapList()) {
                         Image("mapIcon")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
                     }
                     Spacer()
-                    NavigationLink(destination: LocationScreenView()) {
+                    NavigationLink(destination: locationList()) {
                         Image("buildingIcon")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
                     }
                     Spacer()
-                    NavigationLink(destination: FavoriteScreenView()) {
+                    NavigationLink(destination: favoriteList()) {
                         Image("heartIcon")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
