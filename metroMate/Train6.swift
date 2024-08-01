@@ -1,35 +1,42 @@
 //
-// mapList.swift
-// metroMate
+//  Train6.swift
+//  metroMate
 //
-// Created by Scholar on 7/30/24.
+//  Created by Scholar on 8/1/24.
 //
+
 import SwiftUI
-struct mapList: View {
+
+struct Train6: View {
     var trainList = ["1", "2", "3", "4", "5", "6", "7", "A", "C", "E", "B", "D", "F", "M", "G", "J", "Z", "L", "N", "Q", "R", "W", "S", "SIR"]
     @State private var selectedTrain : String = "1"
     @State private var selectedStop : String = "Van Cortlandt Park-242 St"
-    var stopList = ["Van Cortlandt Park-242 St","238 St","231 St", "Marble Hill-225 St", "215 St", "207 St", "Dyckman St", "191 St", "181 St", "168 St-Washington Hts", "157 St","145 St","137 St-City College","125 St","116 St-Columbia University","Cathedral Pkwy (110 St)","103 St","96 St","86 St","79 St","72 St","66 St-Lincoln Center","59 St-Columbus Circle","50 St","Times Sq-42 St","34 St-Penn Station","28 St","23 St","18 St","14 St","Christopher St-Stonewall","Houston St","Canal St","Franklin St","Chambers St","WTC Cortlandt","Rector St","South Ferry"]
+    var stopList = ["Pelham Bay Park","Buhre Av","Middletown Rd","Westchester Sq-E Tremont Av","Zerega Av","Castle Hill Av","Parkchester","St Lawrence Av","Morrison Av-Soundview","Elder Av","Whitlock Av","Hunts Point Av","Longwood Av","E 149 St", "E 143 St-St Mary's St", "Cypress Av","Brook Av","3 Av-138 St","125 St", "116 St", "110 St", "103 St","96 St","86 St","77 St","68 St-Hunter College","59 St","51 St","Grand Central-42 St","33 St","28 St","23 St", "14 St-Union Sq","Astor Pl","Bleecker St","Spring St","Canal St", "Brooklyn Bridge-City Hall"]
     var body: some View {
         NavigationStack{
             ScrollView{
                 VStack(alignment: .leading, spacing: 0.0){
-                    Picker("trainList", selection: $selectedTrain){
-                        ForEach(trainList, id: \.self){
-                            trainList in Text(trainList)
+                    HStack{
+                        Picker("trainList", selection: $selectedTrain){
+                            ForEach(trainList, id: \.self){
+                                trainList in Text(trainList)
+                            }
+                            .padding(.leading, 30)
+                            //fix
+                            
                         }
+                        Text("Train 6")
+                            .font(.title)
+                            .padding(20)
+                            .padding(.leading, 80)
                     }
-                    Text("Train 1 ")
-                        .font(.title)
-                        .padding(20)
-                        .padding(.leading, 130)
-                    Image("Train1")
+                    Image("Train6")
                         .resizable(resizingMode: .stretch)
                         .cornerRadius(40)
                     
                         .background(
                             RoundedRectangle(cornerRadius: 40)
-                                .stroke(Color(red: 0.0, green: 0.16, blue: 0.37, opacity: 1.0), lineWidth: 15)
+                                .stroke(Color(red: 0.40, green: 0.86, blue: 0.57, opacity: 1.0), lineWidth: 15)
                         )
                         .aspectRatio(contentMode: .fit)
                         .padding([.trailing, .leading], 30)
@@ -41,7 +48,7 @@ struct mapList: View {
                                 .foregroundColor(.black)
                                 .cornerRadius(10)
                                 .listRowBackground(Color(red: 0.99, green: 0.78, blue: 0.62, opacity: 0.0))
-                                .listRowSeparatorTint(Color(red: 0.0, green: 0.16, blue: 0.37, opacity: 0.5))
+                                .listRowSeparatorTint(Color(red: 0.0, green: 0.16, blue: 0.37, opacity: 1.0))
                         }
                     }
                     .scrollContentBackground(.hidden)
@@ -52,7 +59,8 @@ struct mapList: View {
                 .background(Color(red: 0.99, green: 0.78, blue: 0.62, opacity: 0.0))
                 .cornerRadius(40)
             }
-            .background(Color(red: 0.53, green: 0.78, blue: 0.62, opacity: 0.2))
+           // .background(Color(red: 0.53, green: 0.78, blue: 0.62, opacity: 0.2))
+            // greenbackground
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
                     NavigationLink(destination: ContentView()) {
@@ -92,5 +100,8 @@ struct mapList: View {
     }
 }
 #Preview {
-    mapList()
+    Train6()
 }
+
+
+

@@ -11,6 +11,8 @@
 		BD46E0262C5950AC00411D49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD46E0252C5950AC00411D49 /* ContentView.swift */; };
 		BD46E0282C5950B800411D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD46E0272C5950B800411D49 /* Assets.xcassets */; };
 		BD46E02B2C5950B800411D49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD46E02A2C5950B800411D49 /* Preview Assets.xcassets */; };
+		BD95D8B52C5BBFE500EC8735 /* Train2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95D8B42C5BBFE500EC8735 /* Train2.swift */; };
+		BD95D8B92C5BC6E300EC8735 /* Train6.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD95D8B82C5BC6E300EC8735 /* Train6.swift */; };
 		BDAC5B9E2C5957CD003DB904 /* locationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC5B9D2C5957CD003DB904 /* locationList.swift */; };
 		BDAC5BA02C5957D9003DB904 /* favoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC5B9F2C5957D9003DB904 /* favoriteList.swift */; };
 		BDAC5BA22C5957F4003DB904 /* mapList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC5BA12C5957F4003DB904 /* mapList.swift */; };
@@ -22,6 +24,8 @@
 		BD46E0252C5950AC00411D49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD46E0272C5950B800411D49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD46E02A2C5950B800411D49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD95D8B42C5BBFE500EC8735 /* Train2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train2.swift; sourceTree = "<group>"; };
+		BD95D8B82C5BC6E300EC8735 /* Train6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train6.swift; sourceTree = "<group>"; };
 		BDAC5B9D2C5957CD003DB904 /* locationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationList.swift; sourceTree = "<group>"; };
 		BDAC5B9F2C5957D9003DB904 /* favoriteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteList.swift; sourceTree = "<group>"; };
 		BDAC5BA12C5957F4003DB904 /* mapList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapList.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 				BD46E0252C5950AC00411D49 /* ContentView.swift */,
 				BDAC5BA12C5957F4003DB904 /* mapList.swift */,
 				BDAC5B9D2C5957CD003DB904 /* locationList.swift */,
+				BD95D8B82C5BC6E300EC8735 /* Train6.swift */,
+				BD95D8B42C5BBFE500EC8735 /* Train2.swift */,
 				BDAC5B9F2C5957D9003DB904 /* favoriteList.swift */,
 				BD46E0272C5950B800411D49 /* Assets.xcassets */,
 				BD46E0292C5950B800411D49 /* Preview Content */,
@@ -151,6 +157,8 @@
 				BDAC5B9E2C5957CD003DB904 /* locationList.swift in Sources */,
 				BDAC5BA22C5957F4003DB904 /* mapList.swift in Sources */,
 				BD46E0242C5950AC00411D49 /* metroMateApp.swift in Sources */,
+				BD95D8B52C5BBFE500EC8735 /* Train2.swift in Sources */,
+				BD95D8B92C5BC6E300EC8735 /* Train6.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

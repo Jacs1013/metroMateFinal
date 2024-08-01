@@ -1,29 +1,36 @@
 //
-// mapList.swift
-// metroMate
+//  Train2.swift
+//  metroMate
 //
-// Created by Scholar on 7/30/24.
+//  Created by Scholar on 8/1/24.
 //
+
 import SwiftUI
-struct mapList: View {
+
+struct Train2: View {
     var trainList = ["1", "2", "3", "4", "5", "6", "7", "A", "C", "E", "B", "D", "F", "M", "G", "J", "Z", "L", "N", "Q", "R", "W", "S", "SIR"]
     @State private var selectedTrain : String = "1"
     @State private var selectedStop : String = "Van Cortlandt Park-242 St"
-    var stopList = ["Van Cortlandt Park-242 St","238 St","231 St", "Marble Hill-225 St", "215 St", "207 St", "Dyckman St", "191 St", "181 St", "168 St-Washington Hts", "157 St","145 St","137 St-City College","125 St","116 St-Columbia University","Cathedral Pkwy (110 St)","103 St","96 St","86 St","79 St","72 St","66 St-Lincoln Center","59 St-Columbus Circle","50 St","Times Sq-42 St","34 St-Penn Station","28 St","23 St","18 St","14 St","Christopher St-Stonewall","Houston St","Canal St","Franklin St","Chambers St","WTC Cortlandt","Rector St","South Ferry"]
+    var stopList = ["Wakefield-241 St", "Nereid Av", "233 St","225 St","219 St","Gun Hill Rd","E 180 St","West Farms Sq-E Tremont Av","174 St","Freeman St","Simpson St","Intervale Av","Prospect Av","Jackson Av","3 Av-149 St","149 St-Grand Concourse","135 St", "125 St","116 St","Central Park North (110 St)","96 St","72 St”,“Times Sq-42 St”,“34 St-Penn Station”,“14 St”,“Chambers St”,“Park Place”,“Fulton St”,“Wall St”,“Clark St","Borough Hall","Hoyt St","Nevins St","Atlantic Av-Barclays Ctr","Bergen St","Grand Army Plaza","Eastern Pkwy-Brooklyn Museum","Franklin Av-Medgar Evers College","President St-Medgar Evers College","Sterling St","Winthrop St","Church Av", "Beverly Rd","Newkirk Av-Little Haiti","Flatbush Av-Brooklyn College"]
     var body: some View {
         NavigationStack{
             ScrollView{
                 VStack(alignment: .leading, spacing: 0.0){
-                    Picker("trainList", selection: $selectedTrain){
-                        ForEach(trainList, id: \.self){
-                            trainList in Text(trainList)
+                    HStack{
+                        Picker("trainList", selection: $selectedTrain){
+                            ForEach(trainList, id: \.self){
+                                trainList in Text(trainList)
+                            }
+                            .padding(.leading, 30)
+                            //fix
+                            
                         }
+                        Text("Train 2")
+                            .font(.title)
+                            .padding(20)
+                            .padding(.leading, 80)
                     }
-                    Text("Train 1 ")
-                        .font(.title)
-                        .padding(20)
-                        .padding(.leading, 130)
-                    Image("Train1")
+                    Image("Train2")
                         .resizable(resizingMode: .stretch)
                         .cornerRadius(40)
                     
@@ -41,7 +48,7 @@ struct mapList: View {
                                 .foregroundColor(.black)
                                 .cornerRadius(10)
                                 .listRowBackground(Color(red: 0.99, green: 0.78, blue: 0.62, opacity: 0.0))
-                                .listRowSeparatorTint(Color(red: 0.0, green: 0.16, blue: 0.37, opacity: 0.5))
+                                .listRowSeparatorTint(Color(red: 0.0, green: 0.16, blue: 0.37, opacity: 1.0))
                         }
                     }
                     .scrollContentBackground(.hidden)
@@ -52,7 +59,8 @@ struct mapList: View {
                 .background(Color(red: 0.99, green: 0.78, blue: 0.62, opacity: 0.0))
                 .cornerRadius(40)
             }
-            .background(Color(red: 0.53, green: 0.78, blue: 0.62, opacity: 0.2))
+           // .background(Color(red: 0.53, green: 0.78, blue: 0.62, opacity: 0.2))
+            // greenbackground
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
                     NavigationLink(destination: ContentView()) {
@@ -92,5 +100,7 @@ struct mapList: View {
     }
 }
 #Preview {
-    mapList()
+    Train2()
 }
+
+
