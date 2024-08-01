@@ -60,9 +60,9 @@ struct Train2: View {
                     .background(Color(red: 0.99, green: 0.78, blue: 0.62, opacity: 0.0))
                     .cornerRadius(40)
                 }
-                // .background(Color(red: 0.53, green: 0.78, blue: 0.62, opacity: 0.2))
+                .background(Color.white)
                 // greenbackground
-                .toolbar {
+        /*     .toolbar {
                     ToolbarItemGroup(placement: .bottomBar) {
                         NavigationLink(destination: ContentView()) {
                             Image("homeIcon")
@@ -92,12 +92,8 @@ struct Train2: View {
                             .frame(width: 30, height: 30)}
                         .navigationBarBackButtonHidden(true)
                     }
-                }
+                }*/
             }
-            .toolbarBackground(
-                Color.skyBlue,
-                for: .navigationBar)
-            
             
             if(selectedTrain == "1"){
                 mapList()

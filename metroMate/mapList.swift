@@ -57,7 +57,7 @@ struct mapList: View {
                     .background(Color(red: 0.99, green: 0.78, blue: 0.62, opacity: 0.0))
                     .cornerRadius(40)
                 }
-               // .background(Color(red: 0.53, green: 0.78, blue: 0.62, opacity: 0.2))
+                .background(Color.white)
                 .toolbar {
                     ToolbarItemGroup(placement: .bottomBar) {
     
@@ -90,9 +90,6 @@ struct mapList: View {
                         .navigationBarBackButtonHidden(true)
                     }
                 }
-                .toolbarBackground(.visible, for: .navigationBar)
-                .toolbarBackground(.red, for: .navigationBar)
-                    
             }
             
             if(selectedTrain == "2"){
@@ -102,7 +99,6 @@ struct mapList: View {
                 Train6()
             }
         }
-        
     }
 }
 #Preview {
